@@ -1,0 +1,25 @@
+# 💎 Column     🧩 Type        📖 Description
+# carat      float       ⚖️ Weight of the diamond
+# cut        categorical ✨ Quality of the cut (Ideal, Premium, Good, Very Good, Fair)
+# color      categorical 🌈 Diamond color from D (best) to J (worst)
+# clarity    categorical 🔍 Clarity rating (IF, VVS1, VVS2, VS1, VS2, SI1, SI2, I1)
+# depth      float       📏 Total depth percentage (z / mean(x, y)) * 100
+# table      float       🖼 Width of the top of the diamond relative to widest point
+# price      int         💰 Price in US dollars
+# x          float       📐 Length in mm
+# y          float       📐 Width in mm
+# z          float       📐 Depth in mm
+
+# ✅ The shape (53940, 10) confirms the dataset has 53,940 diamonds and 10 features.
+
+==================================================
+("whitegrid")      # Look
+("notebook")     # Size
+(style="whitegrid", context="notebook")  # Both
+==================================================
+💡 Summary:
+
+[iterrows()] → easy to loop through rows.
+✅ Great for small datasets / custom logic per row
+❌ Not ideal for big datasets (use vectorized operations instead)
+==================================================
